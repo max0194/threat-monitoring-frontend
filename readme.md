@@ -16,6 +16,10 @@
 - `threat.html` - страница факта возникновения угрозы;
 - `error.html` - страница ошибки.
 
+### Другое:
+- `pre-commit-config.yaml` - файл пре-коммита;
+- `check_filenames.py` - файл проверки названий на заглавные буквы.
+
 ### Инструкция по установке и запуску:
 1. Выполнить git clone https://github.com/max0194/threat-monitoring-backend.git в пустую директорию;
 2. Выполнить git clone https://github.com/max0194/threat-monitoring-frontend.git в ту же директорию;
