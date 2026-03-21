@@ -18,7 +18,7 @@
             </div>
         </div>
     </header>
-    
+
     <main class="employee-main">
         <div class="form-container">
             <h2>Создать новую заявку об угрозе</h2>
@@ -55,13 +55,13 @@
             </form>
         </div>
     </main>
-    
+
     <script>
         function filterThreatTypes() {
             const selectedCategory = document.getElementById('category').value;
             const threatTypeSelect = document.getElementById('threat_type');
             const options = threatTypeSelect.querySelectorAll('option');
-            
+
             options.forEach(option => {
                 if (option.value === '') {
                     option.style.display = 'block';
@@ -74,7 +74,7 @@
                     }
                 }
             });
-            
+
             threatTypeSelect.value = '';
         }
 

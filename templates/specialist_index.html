@@ -17,10 +17,10 @@
             </div>
         </div>
     </header>
-    
+
     <main class="specialist-main">
         <h2>Все заявки по IT-угрозам</h2>
-        
+
         {{ if .requests }}
             <div class="requests-container">
                 <form method="GET" action="/specialist" class="request-search" style="margin-bottom:12px;">
@@ -43,7 +43,7 @@
                                 {{ end }}
                             </div>
                         </div>
-                        
+
                         <div class="request-info">
                             {{ $worker := index $.workerMap .CreatorID }}
                             <p><strong>Сотрудник:</strong> {{ $worker.FullName }}</p>
@@ -55,7 +55,7 @@
                             <strong>Описание угрозы:</strong><br>
                             {{ .Description }}
                         </div>
-                        
+
                         <a href="/request/{{ .ID }}" class="view-button">Просмотреть полную заявку →</a>
                     </div>
                 {{ end }}

@@ -12,14 +12,14 @@
             <h1>Система мониторинга IT-угроз</h1>
         </div>
     </header>
-    
+
     <div class="login-container">
         <h1>Вход в систему</h1>
-        
+
         {{ if .error }}
             <div class="error">{{ .error }}</div>
         {{ end }}
-        
+
         <form method="POST">
             <div class="form-group">
                 <label for="user_type">Тип пользователя:</label>
